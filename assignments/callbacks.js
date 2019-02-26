@@ -2,6 +2,17 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+
+//callback using cb
+function newItems(arr,cb){
+  return cb(arr[2]);
+}
+
+//invocation of function
+newItems(items,function(first){
+  console.log(first)
+});
+
 /* 
 
   //Given this problem: 
@@ -13,6 +24,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   // Potential Solution:
 
   // Higher order function using "cb" as the call back
+
   function firstItem(arr, cb) {
     return cb(arr[0]);
   }

@@ -87,16 +87,16 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-babyNames.forEach(current => console.log(currentValue.last_name));
+// babyNames.forEach(current => console.log(currentValue.last_name));
 
-// Problem 2
+// // Problem 2
 
-const newState = state.map(currentValue => currentValue.city.toLowerCase());
-console.log(newState);
+// const newState = state.map(currentValue => currentValue.city.toLowerCase());
+// console.log(newState);
 
-// Problem 3
+// // Problem 3
 
-const ProductOfNumbers = nums.reduce(function(accumlator, currentValue){
-    return accumlator * currentValue.Prduct_nums;}, 0);
+// const ProductOfNumbers = nums.reduce(function(accumlator, currentValue){
+//     return accumlator * currentValue.Prduct_nums;}, 0);
 
-    console.log(ProductOfNumber);
+//     console.log(ProductOfNumber);

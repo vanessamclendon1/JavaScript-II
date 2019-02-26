@@ -39,20 +39,25 @@ newItems(items,function(first){
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
-  return items.length;
-
+  return cb(arr.length-1);
 }
+getLength(items, function(arrLength){
+console.log(arrLength);
 
-//get length console log
-console.log(getLength(items[0].length));
+});
 
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
-  return items.length;
+  return cb(arr[arr.length-1]);
+  
 }
 
-// console.log(last(items[0].length-1));  //
+last(items, function(lastItem) {
+  console.log(lastItem);
+});
+
+
 
 
 
@@ -84,8 +89,16 @@ console.log(multiplyNums(2,4,multipy));
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return cb(item, list);
   
-}
+  
+  if(list.includes(item)){
+    return cb(true);
+  
+    }
+	}
+
+
 
 
 
@@ -95,4 +108,5 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
 }

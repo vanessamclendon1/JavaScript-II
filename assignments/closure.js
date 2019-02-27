@@ -1,6 +1,18 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function georgia(){
+  console.log(`Georgia is above Florida`);
+  const message = "known for rain in winter";
+
+  function atlanta(){
+    const teams = "Atlanta Falcons are in Atlanta";
+    console.log(`${teams} and Georgia is ${message}`);
+  }
+   atlanta();
+}
+georgia();
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
